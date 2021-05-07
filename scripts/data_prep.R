@@ -1,4 +1,5 @@
 library(psych)
+library(scales)
 
 ### Data preparation
 # Load data
