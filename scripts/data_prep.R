@@ -113,3 +113,5 @@ names(sdata)[names(sdata) == "U_stomp_mean"] <- "verbal_pref_unpretentious"
 names(sdata)[names(sdata) == "S_stomp_mean"] <- "verbal_pref_sophisticated"
 names(sdata)[names(sdata) == "I_stomp_mean"] <- "verbal_pref_intense"
 names(sdata)[names(sdata) == "C_stomp_mean"] <- "verbal_pref_contemporary"
+
+write.csv(sdata, "data/new_labeled_scores.csv")
