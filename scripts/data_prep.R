@@ -102,16 +102,16 @@ sdata$C_stomp_mean <- rowMeans(sdata[,c(43,53,54,57)],
 
 ## Renaming columns
 
-names(sdata)[names(sdata) == "M_music_mean"] <- "acoustic_pref_mellow"
-names(sdata)[names(sdata) == "U_music_mean"] <- "acoustic_pref_unpretentious"
-names(sdata)[names(sdata) == "S_music_mean"] <- "acoustic_pref_sophisticated"
-names(sdata)[names(sdata) == "I_music_mean"] <- "acoustic_pref_intense"
-names(sdata)[names(sdata) == "C_music_mean"] <- "acoustic_pref_contemporary"
+names(data)[names(data) == "M_music_mean"] <- "acoustic_pref_mellow"
+names(data)[names(data) == "U_music_mean"] <- "acoustic_pref_unpretentious"
+names(data)[names(data) == "S_music_mean"] <- "acoustic_pref_sophisticated"
+names(data)[names(data) == "I_music_mean"] <- "acoustic_pref_intense"
+names(data)[names(data) == "C_music_mean"] <- "acoustic_pref_contemporary"
 
-names(sdata)[names(sdata) == "M_stomp_mean"] <- "verbal_pref_mellow"
-names(sdata)[names(sdata) == "U_stomp_mean"] <- "verbal_pref_unpretentious"
-names(sdata)[names(sdata) == "S_stomp_mean"] <- "verbal_pref_sophisticated"
-names(sdata)[names(sdata) == "I_stomp_mean"] <- "verbal_pref_intense"
-names(sdata)[names(sdata) == "C_stomp_mean"] <- "verbal_pref_contemporary"
+names(data)[names(data) == "M_stomp_mean"] <- "verbal_pref_mellow"
+names(data)[names(data) == "U_stomp_mean"] <- "verbal_pref_unpretentious"
+names(data)[names(data) == "S_stomp_mean"] <- "verbal_pref_sophisticated"
+names(data)[names(data) == "I_stomp_mean"] <- "verbal_pref_intense"
+names(data)[names(data) == "C_stomp_mean"] <- "verbal_pref_contemporary"
 
-write.csv(sdata, "data/new_labeled_scores.csv")
+write.csv(data, "data/new_labeled_scores.csv")
